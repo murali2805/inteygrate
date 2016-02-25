@@ -2,7 +2,7 @@ exports.PORT = 3001;
 exports.DEBUG = true;
 exports.ENVIRONMENT = 'production';
 exports.CALLBACK_URL = 'http://localhost:3001';
-exports.PUSH_TOPIC = 'AllAccounts';
+exports.PUSH_TOPIC = 'AccountsTopic';
 
 exports.CLIENT_ID = "YOUR-SFDC-CLIENT-ID"; // Consumer Key
 exports.CLIENT_SECRET = "YOUR-SFDC-CLIENT-SECRET"; // Consumer Secret
