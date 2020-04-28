@@ -17,14 +17,14 @@ var io = require('socket.io')(server);
 var socket = io.sockets.on('connection', function (socket) { });
 
 var org = nforce.createConnection({
-  clientId: config.CLIENT_ID,
-  clientSecret: config.CLIENT_SECRET,
+  clientId: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
   redirectUri: config.CALLBACK_URL + '/oauth/_callback',
   mode: 'multi',
   environment: config.ENVIRONMENT  // optional, sandbox or production, production default
 });
 
-org.authenticate({ username: config.USERNAME, password: config.PASSWORD }, function(err, oauth) {
+org.authenticate({ username: process.env.USERNAME, password: process.env.PASSWORD }, function(err, oauth) {
 
   if(err) return console.log(err);
   if(!err) {
