@@ -33,7 +33,7 @@ org.authenticate({ username: process.env.USERNAME, password: process.env.PASSWOR
   }
 
   // subscribe to a pushtopic
-  var str = org.stream({ topic: config.PUSH_TOPIC, oauth: oauth ,REPLAY_ID:-2});
+  var str = org.stream({ topic: config.PUSH_TOPIC, oauth: oauth ,replayId:-2});
 
   str.on('connect', function(){
     console.log('Connected to pushtopic: ' + config.PUSH_TOPIC);
