@@ -17,8 +17,8 @@
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>Create an account in my Salesforce org <a href=""https://inteygrate-developer-edition.ap6.force.com/muralidhar" target="_blank">here</a> and the same will appear below in real-time !!! </p>
-    <p>For more details visit <a href="https://inteygrate.com/salesforce-nodejs-integration-with-streaming-api/">inteygrate.com</a></p>
+    <p>Create an account in my Salesforce org <a href="https://inteygrate-developer-edition.ap6.force.com/muralidhar" target="_blank">here</a> and the same will appear below in real-time !!! </p>
+    <p>For more details visit <a href="https://inteygrate.com/salesforce-nodejs-integration-with-streaming-api/" target="_blank">inteygrate.com</a></p>
     <div id="messages"></div>
   </body>
 </html>
