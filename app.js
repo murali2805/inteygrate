@@ -21,7 +21,6 @@ var org = nforce.createConnection({
   clientSecret: process.env.CLIENT_SECRET,
   redirectUri: config.CALLBACK_URL + '/oauth/_callback',
   mode: 'multi',
-  replayId: -2,
   environment: config.ENVIRONMENT  // optional, sandbox or production, production default
 });
 
