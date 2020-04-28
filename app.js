@@ -17,7 +17,7 @@ var io = require('socket.io')(server);
 var socket = io.sockets.on('connection', function (socket) { });
 
 var org = nforce.createConnection({
-  clientId: '3MVG9ZL0ppGP5UrDKLDZjNBYg0138QTly8JGsheK0Ry3UNkBF.Unr.VCbS.i.l9j6BSiGBkR0FWYG_i6hk2d_',//process.env.CLIENT_ID,
+  clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
   redirectUri: config.CALLBACK_URL + '/oauth/_callback',
   mode: 'multi',
